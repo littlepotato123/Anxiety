@@ -54,6 +54,7 @@ const coping = () => {
                             </div>
                         ))
                     }
+                    <h1>Source: https://www.webmd.com/mental-health/features/ways-to-reduce-anxiety</h1>
                 </div>
             )
         }

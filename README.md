@@ -35,3 +35,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 # Resources
 - https://www.healthline.com/health/anxiety#foods
+- https://www.webmd.com/mental-health/features/ways-to-reduce-anxiety
