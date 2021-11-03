@@ -38,23 +38,30 @@ const coping = () => {
         )
     }
 
+    // Refresh Button
+
     if(data) {
         if(data.x) {
             return (
                 <div>
-                    <p>{cope_methods[data.x - 1].title}</p>
-                    <p>{cope_methods[data.x - 1].description}</p>
+                    <div className="top">
+                        <p>{cope_methods[data.x - 1].title}</p>
+                        <p>{cope_methods[data.x - 1].description}</p>
+                    </div>
+                    <button onClick={() => window.location.reload(false)}>Refresh</button>
                     <br />
-                    <p>This page generates a random coping method, since different people react and have different affects with different methods. The best way is to try different methods, even if not diagnosed with anxiety, during stressful times.</p>
+                    <h3>This page generates a random coping method, since different people react and have different affects with different methods. The best way is to try different methods, even if not diagnosed with anxiety, during stressful times.</h3>
+                    <ul>
                     {
                         cope_methods.map((method) => (
-                            <div>
+                            <li className="list">
                                 <p>{method.title}</p>
                                 <p>{method.description}</p>
-                            </div>
+                            </li>
                         ))
                     }
-                    <h1>Source: https://www.webmd.com/mental-health/features/ways-to-reduce-anxiety</h1>
+                    </ul>
+                    <a href="https://www.webmd.com/mental-health/features/ways-to-reduce-anxiety">Sources</a>
                 </div>
             )
         }

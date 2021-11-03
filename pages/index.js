@@ -1,5 +1,11 @@
 import Link from 'next/link'
 
+const img = `
+      <img src="https://images.everydayhealth.com/images/how-to-cope-with-anxiety-and-depression-722x406.jpg" />
+      <img src="https://www.verywellmind.com/thmb/y9jVbJMDow-ZQwr81Ek90Ncm89A=/1333x1000/smart/filters:no_upscale()/social-anxiety-disorder-causes-3024749-5c3b8f7bc9e77c0001bffa28.png" />
+      <img src="https://uniquemindcare.com/wp-content/uploads/2020/01/cbd-and-anxiety.png" />
+`
+
 export default function Home() {
   return ( 
     <div>
@@ -73,19 +79,19 @@ export default function Home() {
       <h1>Therapies for Anxiety</h1>
       <ul>
         <li>
-          <h1>Talk Therapy</h1>
+          <h2>Talk Therapy</h2>
           <p>
             Also known as psychotherapy, where stress is remedied by communication to identify and solve issues that cause emotional distress. This helps because it serves as an outlet for people that prefer to verbalize their stress.
           </p>
         </li>
         <li>
-          <h1>Art Therapy</h1>
+          <h2>Art Therapy</h2>
           <p>
             Art therapy involves allowing kids to make art for their own relaxation and sometimes for therapists to interpret. This works because children who are unable to communicat etheir feelings and built-up stress can express it through art.
           </p>
         </li>
         <li>
-          <h1>Deep Pressure Therapy</h1>
+          <h2>Deep Pressure Therapy</h2>
           <p>
             Deep Pressure Therapy consists of applying gentle but firm pressure to the body with a pressure garment. This helps because it is similar to hugging and creating a comfortable environment where stress melts away.
           </p>
@@ -95,7 +101,7 @@ export default function Home() {
       <p>
         They both are two sides of the same coin. Stress is the result of demands on your brain or body. It can be caused by an event or activity that makes one nervous. Anxiety is that same worry or uneasiness.
       </p>
-      <p>Both their symptoms include: </p>
+      <h2>Common Symptoms</h2>
       <ul>
         <li>Headache</li> 
         <li>Stomache</li>
@@ -112,16 +118,15 @@ export default function Home() {
         <li>Restlessness</li>
         <li>Sleeplessness</li>
       </ul>
-      <p>Anxiety and Stress are both a negative and positive and can act as an incentive for some. But with the same issue, it can be the downfall to others.</p>
+      <h3>Anxiety and Stress are both a negative and positive and can act as an incentive for some. But with the same issue, it can be the downfall to others.</h3>
       <h1>Sources</h1>
       <ul>
-        <p>
-          https://www.healthline.com/health/anxiety/anxiety-symptoms-in-children
-        </p>
-        <p>
-          https://www.healthline.com/health/anxiety
-        </p>
-        <p>https://www.healthline.com/health/mental-health/talk-therapy</p>
+        <li>
+          <a href="https://www.healthline.com/health/anxiety">Information about Anxiety</a>
+        </li>
+        <li>
+          <a href="https://www.healthline.com/health/mental-health/talk-therapy">Therapy Information</a>
+        </li>
       </ul>
     </div>
   )
