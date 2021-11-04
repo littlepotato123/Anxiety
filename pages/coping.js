@@ -1,6 +1,9 @@
+import Link from "next/link";
 import useSWR from "swr";
 
 const fetcher = (url) => fetch(url).then(res => res.json())
+
+const i = 0;
 
 const cope_methods = [
     {
@@ -29,7 +32,7 @@ const cope_methods = [
     }
 ]
 
-const coping = () => {
+const Coping = () => {
     const { data, error } = useSWR(`/api/coping`, fetcher)
 
     if(error) {
@@ -55,8 +58,8 @@ const coping = () => {
                     </h3>
                     <ul>
                     {
-                        cope_methods.map((method) => (
-                            <li className="list">
+                        cope_methods.map((method, i) => (
+                            <li key={i} className="list">
                                 <p>{method.title}</p>
                                 <p>{method.description}</p>
                             </li>
@@ -65,7 +68,7 @@ const coping = () => {
                     </ul>
                     <h3>
                         <a href="https://www.webmd.com/mental-health/features/ways-to-reduce-anxiety">Sources</a>
-                        <a href="/">Back Home</a>
+                        <Link href="/">Back Home</Link>
                     </h3>
                 </div>
             )
@@ -79,4 +82,4 @@ const coping = () => {
     }
 }
 
-export default coping;
+export default Coping;

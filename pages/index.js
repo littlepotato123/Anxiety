@@ -1,11 +1,5 @@
 import Link from 'next/link'
 
-const img = `
-      <img src="https://images.everydayhealth.com/images/how-to-cope-with-anxiety-and-depression-722x406.jpg" />
-      <img src="https://www.verywellmind.com/thmb/y9jVbJMDow-ZQwr81Ek90Ncm89A=/1333x1000/smart/filters:no_upscale()/social-anxiety-disorder-causes-3024749-5c3b8f7bc9e77c0001bffa28.png" />
-      <img src="https://uniquemindcare.com/wp-content/uploads/2020/01/cbd-and-anxiety.png" />
-`
-
 export default function Home() {
   return ( 
     <div>
@@ -42,11 +36,10 @@ export default function Home() {
         <li>Numbness or Tingling</li>
       </ul>
       <h1>Causes of Anxiety</h1>
-      <p>Based on current research, scientists are completely aware of the exact cause of anxiety, but the assume that it is likely a combination of factors. These may include genetic, environmental and neuro-chemical factors that play a role in enhancing one's stress levels and fear factor. Researches also believe that the areas of the brain responsible for controlling fear may be impacted or damaged.</p>
       <h1>Tests to Diagnose Anxiety</h1>
       <p>There is not a single to determine whether a patient has anxiety, but instead there is a lengthy process of physical examinations, mental evaluations, and psychological questionnaires. Some doctors conduct physical exams such as blood and uring tests to rule out other conditions. Some anxiety tests are not to determine if anxiety exists, but instead the severity of the diagnosis.</p>
       <h1>Treatments for Anxiety</h1>
-      <p>There are two types of "treatments" and they are based on the severity of the anxiety, the patient's preference, and also based on what the medical practitioners recommends.</p>
+      <p>There are two types of treatments and they are based on the severity of the anxiety, the preference of the patient, and also based on what the medical practitioners recommends.</p>
       <ul>
         <li>
           <h1>Psychotherapy</h1>
