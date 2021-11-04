@@ -25,6 +25,12 @@ li {
     background-color: lightgreen;
 }
 
-a {
-    
+a, button {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background: lightskyblue;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
 }
