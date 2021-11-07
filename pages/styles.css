@@ -39,3 +39,38 @@ a, button {
 .head {
     background: none;
 }
+
+.Box {
+    background: #161E54;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.Not {
+    background: #88E0EF;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.link {
+    background-color: #161E54;
+    color: white;
+    margin: 10px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.Yo {
+    background: #161E54;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}

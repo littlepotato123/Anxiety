@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from "next/link";
 import useSWR from "swr";
 
@@ -47,14 +48,20 @@ const Coping = () => {
         if(data.x) {
             return (
                 <div>
-                    <div className="top">
+                    <Head>
+                        <title>Anxiety</title>
+                        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                    </Head>
+                    <div className="Yo">
                         <p>{cope_methods[data.x - 1].title}</p>
                         <p>{cope_methods[data.x - 1].description}</p>
                     </div>
                     <br />
                     <h3>
                         This page generates a random coping method, since different people react and have different affects with different methods. The best way is to try different methods, even if not diagnosed with anxiety, during stressful times.
-                        <br /><button onClick={() => window.location.reload(false)}>Refresh</button>
+                    </h3>
+                    <h3>
+                        <a onClick={() => window.location.reload(false)} style={{ margin: 10 }}>Generate New Strategy</a>
                     </h3>
                     <ul>
                     {
