@@ -1,8 +1,13 @@
+import Head from 'next/head'
 import Link from 'next/link'
 
 export default function Home() {
   return ( 
     <div>
+      <Head>
+        <title>Anxiety</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <h1>Types of Anxiety</h1>
       <ul>
         <li>Panic Disorder: Experiencing recurring panic attacks at unexpected times. A person with panic disorder may live in fear of the next panic attack</li> 
